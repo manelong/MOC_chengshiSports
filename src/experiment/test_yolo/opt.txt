@@ -1,0 +1,58 @@
+==> torch version: 1.11.0
+==> cudnn version: 8200
+==> Cmd:
+['train.py', '--K', '7', '--exp_id', 'Train_K7_rgb_coco', '--rgb_model', './experiment/test_yolo', '--batch_size', '2', '--master_batch', '-1', '--lr', '0.625e-4', '--gpus', '0', '--num_workers', '16', '--num_epochs', '20', '--lr_step', '6,8', '--save_all', '--dataset', 'newbasketball', '--pretrain_model', 'coco', '--resize_height', '288', '--resize_width', '512', '--arch', 'yolo', '--val_epoch']
+==> Opt:
+  K: 7
+  N: 100
+  arch: yolo
+  auto_stop: False
+  batch_size: 2
+  branch_info: {'hm': 1, 'mov': 14, 'wh': 14}
+  chunk_sizes: [2]
+  dataset: newbasketball
+  down_ratio: 4
+  exp_id: Train_K7_rgb_coco
+  flip_test: False
+  flow_model: 
+  gpus: [0]
+  gpus_str: 0
+  head_conv: 256
+  hm_fusion_rgb: 0.5
+  hm_weight: 1
+  inference_dir: tmp
+  load_model: 
+  log_dir: ./experiment/test_yolo/logs_tensorboardX
+  lr: 6.25e-05
+  lr_step: [6, 8]
+  master_batch_size: 2
+  mean: [0.40789654, 0.44719302, 0.47026115]
+  model_name: None
+  mov_fusion_rgb: 0.8
+  mov_weight: 1
+  ninput: 1
+  num_classes: 1
+  num_epochs: 20
+  num_workers: 16
+  pin_memory: False
+  pretrain_model: coco
+  print_log: False
+  redo: False
+  resize_height: 288
+  resize_width: 512
+  rgb_model: ./experiment/test_yolo
+  root_dir: /mnt/data/code/code_hub/basketball_moc/moc_code/MOC/src/..
+  save_all: True
+  save_dir: ./experiment/test_yolo
+  seed: 317
+  set_head_conv: -1
+  split: 1
+  start_epoch: 0
+  std: [0.28863828, 0.27408164, 0.27809835]
+  task: MOC_train
+  th: 0.5
+  ucf_pretrain: False
+  val_epoch: True
+  visual_per_inter: 100
+  wh_fusion_rgb: 0.8
+  wh_weight: 0.1
